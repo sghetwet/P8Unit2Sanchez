@@ -528,8 +528,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 4033184427945452733, guid: 665a3f2660cbe0945b88614d05200fbf, type: 3}
   horizontalInput: 0
-  speed: 10
-  xRange: 10
+  verticalInput: 0
+  speed: 30
+  xRange: 20
 --- !u!1001 &1075052844
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -709,7 +710,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4033184427945452733, guid: 665a3f2660cbe0945b88614d05200fbf, type: 3}
   m_PrefabInstance: {fileID: 3798006809995816074}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1526530166
+--- !u!114 &1526530172
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -718,7 +719,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1526373460}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73ae21fbfbe403048bc4d518994d19a2, type: 3}
+  m_Script: {fileID: 11500000, guid: efde7a08ea61aed4487801c6ccf6915f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1590138454
@@ -862,7 +863,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4033184427945452733, guid: 665a3f2660cbe0945b88614d05200fbf, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1526530166}
+      addedObject: {fileID: 1526530172}
   m_SourcePrefab: {fileID: 100100000, guid: 665a3f2660cbe0945b88614d05200fbf, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
