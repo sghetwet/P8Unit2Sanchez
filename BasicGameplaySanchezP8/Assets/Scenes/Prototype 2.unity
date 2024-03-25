@@ -531,6 +531,8 @@ MonoBehaviour:
   verticalInput: 0
   speed: 30
   xRange: 20
+  zRange: 10
+  zOffset: 7.5
 --- !u!1001 &1075052844
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -689,6 +691,11 @@ MonoBehaviour:
   - {fileID: 1623274750169449215, guid: b42b8ebbbd5f43048b34e1fd9be903a3, type: 3}
   - {fileID: 7198457190412420647, guid: ab470d3873505d949ad67a4b6a1e1b89, type: 3}
   spawnrangeX: 20
+  spawnrangeZ: 20
+  sideSpawnMinZ: 0
+  sideSpawnMaxZ: 0
+  sideSpawnX: 0
+  spawnPosX: 20
   spawnPosZ: 20
 --- !u!4 &1096586939
 Transform:

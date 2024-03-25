@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     public float verticalInput;
     public float speed = 30.0f;
     public float xRange = 30.0f;
+    public float zRange = 5.0f;
+    public float zOffset = 5.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,9 +32,13 @@ public class PlayerController : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
 
-        verticalInput = Input.GetAxis("Vertical");
-        transform.Translate(Vector3.up * verticalInput * Time.deltaTime * speed);
+        if (transform.position.z < -zRange + zOffset)
+            transform.position = new Vector3(transform.position.x, transform.position.y, -zRange + zOffset);
 
+        if (transform.position.z > zRange + zOffset)
+            transform.position = new Vector3(transform.position.x, transform.position.y, zRange + zOffset);
+        verticalInput = Input.GetAxis("Vertical");
+        transform.Translate(Vector3.forward * verticalInput * Time.deltaTime * speed);
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
